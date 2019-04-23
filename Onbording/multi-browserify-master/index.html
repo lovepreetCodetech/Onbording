@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+    <meta charset="utf-8">
+    <title>think-forms-components</title>
+    <!-- CDN references for JQuery -->
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+</head>
+    <body>
+        <div ng-controller="testController">
+            <h1>Building with Browserify &amp; Gulp</h1>
+            <h4>A working version will display 'Hello World' to the right (not handlebars): {{ variable }}</h4>
+            <h4>A working version will also display 'JQuery' to the right: <span id="jquerySpan"></span></h4>
+        </div>
+        <!-- CDN Reference for AngularJS -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+        <!-- Generated files injected by Gulp build -->
+        <script src="./js/vendor-concat.js"></script>
+        <script src="./js/demo-app.js"></script>
+    </body>
+</html>

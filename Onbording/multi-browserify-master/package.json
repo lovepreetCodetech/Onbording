@@ -1,0 +1,43 @@
+{
+	"author": "Think Research Innovations",
+	"name": "multi-browserify-test",
+	"version": "0.0.1",
+	"description": "",
+	"homepage": "",
+	"dependencies": {
+	},
+	"devDependencies": {
+        "browserify-shim" : "3.4.1",
+        "express": "^3.4.8",
+		"gulp": "^3.5.2",
+        "gulp-concat": "^2.1.7",
+        "gulp-load-plugins": "0.5.0",
+        "gulp-plumber": "^0.5.6",
+        "gulp-rename" : "1.2.0",
+        "gulp-streamify": "0.0.5",
+        "gulp-uglify": "^0.2.1",
+        "gulp-util": "^2.2.14",
+        "insert-module-globals" : "5.0.1",
+        "run-sequence" : "0.3.6",
+        "vinyl-source-stream": "^0.1.1",
+        "gulp-rimraf": "0.0.9"
+	},
+    "browser" : {
+
+    },
+    "browserify" : {
+        "transform": ["browserify-shim"]
+    },
+    "browserify-shim" : {
+        "angular": "global:angular",
+        "jquery" : "global:$",
+        "test-ng-module" : { "exports": null, "depends": [ "jquery:$", "angular:angular"]}
+    },
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": "",
+	"engines":{
+		"node":"0.10.10"
+	}
+}
